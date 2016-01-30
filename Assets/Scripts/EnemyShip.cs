@@ -9,9 +9,12 @@ public class EnemyShip : MonoBehaviour {
 		gameObject.AddComponent<Rigidbody> ();     //Add Rigidbody Component
 		erb = GetComponent<Rigidbody> ();     //Access rigidbody attached to this object
 		erb.useGravity = false;        //Disable Gravity
-		erb.velocity = Vector3.right * -20;    //Set Velocity to be approaching the player
+		erb.velocity = Vector3.right * -40;    //Set Velocity to be approaching the player
 	}
 	void Update () {
+		if (transform.position.x <= -44F) {
+			Destroy (gameObject);
+		}
 		
 	}
 
