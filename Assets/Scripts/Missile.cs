@@ -13,7 +13,7 @@ public class Missile : MonoBehaviour {
 	}
 
 	void Update () {
-		if (transform.position.x >= 44.6F) {    //If missile exits the screen, destroy it automatically
+		if (transform.position.x >= 48F) {    //If missile exits the screen, destroy it automatically
 			Destroy (gameObject);
 		}
 	}
