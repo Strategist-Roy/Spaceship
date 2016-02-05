@@ -6,7 +6,8 @@ public class EnemyShip : MonoBehaviour {
 	private GameObject missile;
 	private Rigidbody erb;
 	void Start () {
-		transform.position = new Vector3 (Random.Range (9F, 40F), 10, Random.Range (12.4F, -12.4F));   //Position the ship at the range defined
+		transform.position = new Vector3 (Random.Range (9F, 40F), 10, Random.Range (-20F, 20F));   //Position the ship at the range defined
+		transform.Rotate(new Vector3 (Random.Range(0F, 90F), Random.Range(0F, 90F), Random.Range(0F, 90F)));   //Set Random Angles
 		gameObject.AddComponent<Rigidbody> ();     //Add Rigidbody Component
 		erb = GetComponent<Rigidbody> ();     //Access rigidbody attached to this object
 		erb.useGravity = false;        //Disable Gravity
