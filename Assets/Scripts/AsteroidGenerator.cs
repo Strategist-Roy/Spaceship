@@ -11,7 +11,7 @@ public class AsteroidGenerator: MonoBehaviour {
 
 	public void Generate () {
 		Random.seed = (int) System.DateTime.Now.Ticks;
-		conc = Random.Range (5, 15);
+		conc = Random.Range (5, 10);
 		while (conc != 0) {
 			conc--;
 			GameObject asteroid = Instantiate (rock) as GameObject;

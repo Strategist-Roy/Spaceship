@@ -5,7 +5,7 @@ public class Asteroid : MonoBehaviour {
 
 	private Rigidbody rb;
 	void Start () {
-		transform.position = new Vector3 (Random.Range (9F, 40F), 10, Random.Range (-20F, 20F));   //Position the ship at the range defined
+		transform.position = new Vector3 (Random.Range (9F, 40F), 10, Random.Range (-7F, 12F));   //Position the ship at the range defined
 		transform.Rotate(new Vector3 (Random.Range(0F, 90F), Random.Range(0F, 90F), Random.Range(0F, 90F)));   //Set Random Angles
 		rb = GetComponent<Rigidbody> ();
 		rb.useGravity = false;   //Set Gravity to null
