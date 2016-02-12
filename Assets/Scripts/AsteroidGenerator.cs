@@ -6,12 +6,12 @@ public class AsteroidGenerator: MonoBehaviour {
 	private int conc;
 	public GameObject rock;
 	void Start () {
-		InvokeRepeating ("Generate", 0F, 0.7F);    //Call Generate to create EnemyShips at interval of 2s 
+		InvokeRepeating ("Generate", 0F, 0.7F);    //Call Generate to create EnemyShips at interval of 0.7s 
 	}
 
 	public void Generate () {
 		Random.seed = (int) System.DateTime.Now.Ticks;
-		conc = Random.Range (5, 10);
+		conc = Random.Range (1, 5);
 		while (conc != 0) {
 			conc--;
 			GameObject asteroid = Instantiate (rock) as GameObject;
