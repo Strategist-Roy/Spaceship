@@ -1,5 +1,4 @@
-The toughest space shooter ever created.
-
+Download and Test your Skills..
 Developers:
 
 Cryzek
